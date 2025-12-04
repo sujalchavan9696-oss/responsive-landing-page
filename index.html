@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sujal - Animated Landing Page</title>
+  <meta name="description" content="Responsive animated landing page by Sujal" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Decorative Floating Shapes -->
+  <div class="bg-shape s1" aria-hidden="true"></div>
+  <div class="bg-shape s2" aria-hidden="true"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="header" id="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Sujal portfolio">
+        <span class="brand-text">Sujal</span>
+        <span class="dot" aria-hidden="true"></span>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <!-- Navigation -->
+      <nav class="nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+
+      <div class="hero-content">
+        <h1>
+          Hi, I'm
+          <span id="animated-name" class="name-style">Sujal</span>
+          <span class="typing-cursor" aria-hidden="true">|</span>
+        </h1>
+
+        <p class="lead">
+          I design and build clean, responsive, animated web experiences.
+          This landing page is created as part of my SkillCraft Web Development internship.
+        </p>
+
+        <div class="cta-row">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn ghost">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="card">
+          <h3>Animated UI</h3>
+          <p>Smooth scrolling • Floating shapes • Scroll reveal effects</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a BCA student specializing in Web Development & Cybersecurity.
+        I focus on building visually clean UI, responsive layouts, and interactive components that feel modern and polished.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section alt">
+    <div class="container grid-3">
+
+      <div class="card service">
+        <h3>Frontend Development</h3>
+        <p>HTML, CSS, JavaScript with responsive and animated UI.</p>
+      </div>
+
+      <div class="card service">
+        <h3>Web Applications</h3>
+        <p>Interactive web apps like To-Do App, Stopwatch, Games, etc.</p>
+      </div>
+
+      <div class="card service">
+        <h3>GitHub Projects</h3>
+        <p>Clean code, organized repos, and deploy-ready structure.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="grid-2">
+        <div class="proj">
+          <h4>Responsive Landing Page</h4>
+          <p>Interactive navbar, animations, and floating background.</p>
+          <a href="#home" class="btn small">Live Preview</a>
+        </div>
+
+        <div class="proj">
+          <h4>Stopwatch App</h4>
+          <p>JavaScript based stopwatch with laps & reset.</p>
+          <a class="btn small" href="#">GitHub Repo</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact Me</h2>
+
+      <form class="contact-form" id="contactForm">
+        <label for="name">Name</label>
+        <input id="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary" id="sendBtn">Send</button>
+          <button type="button" class="btn ghost" id="clearBtn">Clear</button>
+        </div>
+
+        <p class="note">This is a demo form — no server connected.</p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sujal — Built for SkillCraft Internship</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
